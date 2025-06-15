@@ -1,0 +1,48 @@
+name: Build Hugo Site
+
+on:
+  push:
+    branches:
+      - "**" # Triggers on pushes to all branches
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: # Add permissions for GitHub Pages deployment
+      pages: write
+      id-token: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: true # Fetch Hugo themes (if submodule)
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest' # Or specify your Hugo version
+          # extended: true # Uncomment if using Hugo extended version
+
+      - name: Build
+        run: hugo --minify # Build the site (minify for production)
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3 # Updated to v3
+        with:
+          path: ./docs
+
+  deploy: # Add a new job for deployment
+    needs: build # Depends on the build job
+    runs-on: ubuntu-latest
+    # Optional: Only deploy from a specific branch (e.g., main)
+    if: github.ref == 'refs/heads/main' # Uncommented and assuming 'main' is your primary branch
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # Updated to v4
