@@ -29,7 +29,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3 # Updated to v3
         with:
-          path: ./docs
+          path: ./public # Changed back from ./docs
 
   deploy: # Add a new job for deployment
     needs: build # Depends on the build job
