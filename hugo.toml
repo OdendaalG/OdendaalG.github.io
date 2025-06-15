@@ -2,7 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-gb'
 title = 'G-Oden Labs'
 theme = 're-terminal'
-publishDir = 'docs'
+publishDir = 'public'
 
 pagination.pageSize = 5
 
