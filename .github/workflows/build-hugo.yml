@@ -21,7 +21,7 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest' # Or specify your Hugo version
-          # extended: true # Uncomment if using Hugo extended version
+          extended: true # Uncomment if using Hugo extended version
 
       - name: Build
         run: hugo --minify # Build the site (minify for production)
