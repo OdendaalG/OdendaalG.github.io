@@ -23,6 +23,10 @@ jobs:
           hugo-version: 'latest' # Or specify your Hugo version
           extended: true # Uncomment if using Hugo extended version
 
+      - name: Install Hugo Modules (if applicable)
+        run: |
+          hugo mod tidy
+
       - name: Build
         run: hugo --minify # Build the site (minify for production)
 
