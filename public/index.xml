@@ -6,7 +6,20 @@
     <description>Recent content in Home on Oden Labs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Jul 2025 09:43:33 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Where Did the Memory Go</title>
+      <link>http://localhost:1313/posts/where-did-the-memory-go/</link>
+      <pubDate>Sun, 06 Jul 2025 09:43:33 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/where-did-the-memory-go/</guid>
+      
+      <description>&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
+&lt;p&gt;In a recent project at a client there was a Python data manipulation app service built in Azure. The ask is simple: take data from an Azure storage account, wrangle it a bit, and store it in a database. Simple ETL. We had built it to run in a step-wise manner, one step taking the input of the previous and giving its output to the next.&lt;/p&gt;
+&lt;p&gt;The issue was memory inefficiency, our Azure function app kept crashing because it ran out of memory. To monitor this and understand where the memory went (which operation) we started blotting Python&amp;rsquo;s own memory analysis package around:&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Table of content</title>
       <link>http://localhost:1313/posts/table-of-content/</link>
@@ -94,16 +107,10 @@
       
       <guid>http://localhost:1313/pages/about/</guid>
       
-      <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
-&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;
+      <description>&lt;p&gt;Oden Labs is an attempt to merge two things I like most: rigorous scientific study and asking silly questions about technology.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yuin/goldmark&#34;&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;</description>
+&lt;li&gt;Search for truth in and among the opinionated scriblings of software engineering experts throughtout time.&lt;/li&gt;
+&lt;/ul&gt;</description>
       
     </item>
     
