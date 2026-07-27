@@ -1,0 +1,11 @@
+/* Site-specific overrides. The bulk of the styling comes from the
+   flatly/darkly bootswatch themes configured in _quarto.yml. */
+
+.quarto-title-block .quarto-title-banner {
+  background-image: none;
+}
+
+/* Keep code blocks readable in both light and dark modes. */
+pre.sourceCode {
+  border-radius: 4px;
+}

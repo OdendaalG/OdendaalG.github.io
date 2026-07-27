@@ -1,0 +1,24 @@
+---
+title: "Oden Labs"
+subtitle: "Empirical autonomous software exploration"
+author: "G Odendaal"
+toc: false
+about:
+  template: trestles
+  image: assets/rect5436.svg
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/OdendaalG
+    - icon: twitter-x
+      text: X
+      href: https://x.com/g_odendaal
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+  max-items: 5
+  fields: [date, title, description]
+---
+
+Empirical analysis of the world.

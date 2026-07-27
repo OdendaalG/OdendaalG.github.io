@@ -1,0 +1,6 @@
+# Defaults applied to every post in this directory.
+author: "G Odendaal"
+toc: true
+toc-depth: 4
+title-block-banner: false
+freeze: auto

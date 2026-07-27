@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Oden Labs"
+  description: "Empirical analysis of the world"
+  site-url: https://odendaalg.github.io/
+  favicon: assets/icons/favicon.svg
+  google-analytics: "G-J8DF66JTY4"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: posts.qmd
+        text: Posts
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/OdendaalG
+        aria-label: GitHub
+      - icon: twitter-x
+        href: https://x.com/g_odendaal
+        aria-label: X
+      - icon: rss
+        href: posts.xml
+        aria-label: RSS
+  page-footer:
+    center: "&copy; 2025 G Odendaal"
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 4
+    code-copy: true
+    code-overflow: wrap

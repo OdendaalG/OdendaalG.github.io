@@ -1,0 +1,11 @@
+---
+title: "Posts"
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+  categories: true
+  feed: true
+  fields: [date, title, description, categories]
+toc: false
+---
